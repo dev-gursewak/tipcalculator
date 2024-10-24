@@ -7,16 +7,26 @@
         <script src="myscript.js" defer></script>
     </head>
     <body>
-        <foam>
-            <label for="total">Bill amount</label>
-            <input type="number" name="total" id="total">
-            <label for="service">Service quality</label>
-            <input type="radio" name="service" id="service" value="5">excellent
-            <input type="radio" name="service" id="service" value="4">great
-            <input type="radio" name="service" id="service" value="3">good
-            <input type="radio" name="service" id="service" value="2">okay
-            <input type="radio" name="service" id="service" value="1">terrible
-            <input type="radio" name="service" id="service" value="">Booooooooooo! I am report this to police
-        </foam>
+        <div>
+            <label for="total">Bill amount: </label>
+            <input type="number" name="total" id="total"/>
+        </div>
+        <div>
+            Rate Your experience: 
+            <select name="service">
+                <option value="6" disabled>select the option for serivce quality</option>
+                <option value="5">excellent</option>
+                <option value="4">great</option>
+                <option value="3">good</option>
+                <option value="2">okay</option>
+                <option value="1">terrible</option>
+                <option value="0">Booooooooooo! I will report this to police</option>
+            </select>
+        </div>
+        <div>
+            <label for="totalpeople">No. of Person:</label>
+            <input type="number" name="totalpeople" id="totalpeople"/>
+        </div>
+            <input type="submit" value="submit"/>
     </body>
 </html>
